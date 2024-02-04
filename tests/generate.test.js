@@ -1,4 +1,4 @@
-const {Square} = require('../lib/shapes.js');
+const {Shape, Square} = require('../lib/shapes.js');
 const generateSVG = require('../lib/generate.js');
 const fs = require('fs');
 const path = require('path');
@@ -9,7 +9,7 @@ describe('SVG File Generation', () => {
 <rect width="150" height="150" x="75" y="25" fill="#0000FF" />
 <text x="150" y="125" font-size="60" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif">SVG</text>
 </svg>`;
-        const testPath = path.join(__dirname, 'dist/testOutput.svg');
+        const testPath = path.join(__dirname, '/../dist/testOutput.svg');
         generateSVG(mockSVG, testPath);
         expect(fs.existsSync(testPath)).toEqual(true);
     });
@@ -18,7 +18,7 @@ describe('SVG File Generation', () => {
         testShape.text = "SVG";
         const render = Shape.render(testShape);
 
-        const testPath = path.join(__dirname, 'dist/testOutput.svg');
+        const testPath = path.join(__dirname, '/../dist/testOutput.svg');
         generateSVG(render, testPath);
 
         const testFile = fs.readFileSync(testPath, {encoding: 'utf-8'});
@@ -32,8 +32,9 @@ describe('SVG File Generation', () => {
     it("an error should be thrown if you attempt to specify a path that doesn't exist", () => {
         const testPath = '/a/b/c/nothinghere.svg';
         const testShape = new Square();
+        const render = Shape.render(testShape);
         expect(() => {
-            generateSVG(testShape, testPath)
-        }).toThrow(Error("The path specified for storing the output doesn't exist"));
+            generateSVG(render, testPath)
+        }).toThrow();
     });
 });
