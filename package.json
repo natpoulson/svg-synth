@@ -1,0 +1,30 @@
+{
+  "name": "svg-synth",
+  "version": "0.0.1",
+  "description": "A simple app that generates SVG files based on user inputs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natpoulson/svg-synth.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "cli"
+  ],
+  "author": "Nat Poulson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/natpoulson/svg-synth/issues"
+  },
+  "homepage": "https://github.com/natpoulson/svg-synth#readme",
+  "dependencies": {
+    "inquirer": "8.2.4"
+  },
+  "devDependencies": {
+    "jest": "29.7.0"
+  }
+}
