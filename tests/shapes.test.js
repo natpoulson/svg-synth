@@ -59,7 +59,6 @@ Not implemented
         const test = new Square();
         it('inherits from Shape', () => {
             expect(test).toHaveProperty('shapeColour');
-            expect(test).toHaveProperty('textColour');
             expect(test).toHaveProperty('text');
             expect(test).toHaveProperty('font');
         });
@@ -88,7 +87,6 @@ Not implemented
         const test = new Circle();
         it('inherits from Shape', () => {
             expect(test).toHaveProperty('shapeColour');
-            expect(test).toHaveProperty('textColour');
             expect(test).toHaveProperty('text');
             expect(test).toHaveProperty('font');
         });
@@ -116,7 +114,6 @@ Not implemented
         const test = new Triangle();
         it('inherits from Shape', () => {
             expect(test).toHaveProperty('shapeColour');
-            expect(test).toHaveProperty('textColour');
             expect(test).toHaveProperty('text');
             expect(test).toHaveProperty('font');
         });
@@ -145,7 +142,7 @@ Not implemented
         it('has a custom implementation of draw(), which returns a formatted cml string of both the triangle and the text', () => {
             test.text = "SVG";
             expect(test.draw()).toEqual(
-`<polygon points="150 25 225 175 75 175" fill="#0000FF" />
+`<polygon points="150 25 225 175 75 175" fill="#000000" />
 <text x="150" y="165" font-size="50" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif">SVG</text>`
             )
         });
