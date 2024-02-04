@@ -29,4 +29,11 @@ describe('SVG File Generation', () => {
 </svg>`
         );
     });
+    it("an error should be thrown if you attempt to specify a path that doesn't exist", () => {
+        const testPath = '/a/b/c/nothinghere.svg';
+        const testShape = new Square();
+        expect(() => {
+            generateSVG(testShape, testPath)
+        }).toThrow(Error("The path specified for storing the output doesn't exist"));
+    });
 });
