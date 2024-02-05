@@ -16,7 +16,7 @@ Prompt.ask()
                 shape = new Triangle();
                 break;
         }
-        shape.shapeColour = result.shapeColour;
+        shape.colour = result.shapeColour;
         shape.font = {colour: result.fontColour};
         shape.text = result.text;
 

@@ -4,8 +4,8 @@ describe("Shapes", () => {
     describe("Shape", () => {
         const test = new Shape();
         it('has a colour property, and returns a default colour from empty declaration', () => {
-            expect(test).toHaveProperty('shapeColour');
-            expect(test.shapeColour).toEqual('#000000');
+            expect(test).toHaveProperty('colour');
+            expect(test.colour).toEqual('#000000');
         });
         it('has a text property, and returns an empty string from empty declaration', () => {
             expect(test).toHaveProperty('text');
@@ -58,7 +58,7 @@ Not implemented
     describe("Square", () => {
         const test = new Square();
         it('inherits from Shape', () => {
-            expect(test).toHaveProperty('shapeColour');
+            expect(test).toHaveProperty('colour');
             expect(test).toHaveProperty('text');
             expect(test).toHaveProperty('font');
         });
@@ -86,7 +86,7 @@ Not implemented
     describe("Circle", () => {
         const test = new Circle();
         it('inherits from Shape', () => {
-            expect(test).toHaveProperty('shapeColour');
+            expect(test).toHaveProperty('colour');
             expect(test).toHaveProperty('text');
             expect(test).toHaveProperty('font');
         });
@@ -113,7 +113,7 @@ Not implemented
     describe("Triangle", () => {
         const test = new Triangle();
         it('inherits from Shape', () => {
-            expect(test).toHaveProperty('shapeColour');
+            expect(test).toHaveProperty('colour');
             expect(test).toHaveProperty('text');
             expect(test).toHaveProperty('font');
         });
