@@ -3,7 +3,7 @@ const { Shape, Square, Circle, Triangle } = require("../lib/shapes.js");
 describe("Shapes", () => {
     describe("Shape", () => {
         const test = new Shape();
-        it('has a shapeColour property, and returns a default colour from empty declaration', () => {
+        it('has a colour property, and returns a default colour from empty declaration', () => {
             expect(test).toHaveProperty('shapeColour');
             expect(test.shapeColour).toEqual('#000000');
         });
@@ -139,7 +139,7 @@ Not implemented
                 3: [75, 175]
             })
         });
-        it('has a custom implementation of draw(), which returns a formatted cml string of both the triangle and the text', () => {
+        it('has a custom implementation of draw(), which returns a formatted xml string of both the triangle and the text', () => {
             test.text = "SVG";
             expect(test.draw()).toEqual(
 `<polygon points="150 25 225 175 75 175" fill="#000000" />
