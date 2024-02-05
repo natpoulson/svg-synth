@@ -45,7 +45,7 @@ The following test suites have been provided for the app, and evaluates the Shap
 Tests can be initiated with the following line:
 
 ```
-npm start test
+npm run test
 ```
 
 This will initiate the jest testing suite if you have installed all the node modules required. The following tests are performed:
