@@ -35,9 +35,9 @@ Once installed, run `node index.js` from in the repo folder. The app is console-
 
 Once you've provided these answers, an SVG will be generated in `./dist/output.svg` with the final markup.
 
-A demonstration of this process can be found in the video below:
+A demonstration of this process can be found in the GIF below:
 
-![SVG Synth Demonstration - Creating a Green circle with Pink text](./project/media/usage_demo.mp4)
+![SVG Synth Demonstration](./project/media/usage_demo.gif)
 
 ## Tests
 The following test suites have been provided for the app, and evaluates the Shapes and Generate modules. As stated above, Prompt is not tested because of difficulties implementing tests that work with its interactive nature.
@@ -85,9 +85,9 @@ This will initiate the jest testing suite if you have installed all the node mod
         - the contents of "testOutput.svg" should match the output of Shape.render()
         - an error should be thrown if you attempt to specify a path that doesn't exist
 
-The following video demonstrates the tests being executed, and their results.
+The following GIF demonstrates the tests being executed, and their results.
 
-![Jest test suite demonstration video](./project/media/test_demo.mp4)
+![Jest test suite demonstration](./project/media/test_demo.gif)
 
 ## Credits
 ### Code and Extensibility
