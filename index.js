@@ -20,5 +20,5 @@ Prompt.ask()
         shape.font = {colour: result.fontColour};
         shape.text = result.text;
 
-        generate(Shape.render(shape), './dist/mytest.svg');
+        generate(Shape.render(shape));
     });
