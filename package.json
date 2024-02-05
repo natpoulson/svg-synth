@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/natpoulson/svg-synth#readme",
   "dependencies": {
-    "inquirer": "8.2.4"
+    "inquirer": "8.2.4",
+    "inquirer-search-list": "^1.2.6"
   },
   "devDependencies": {
     "jest": "29.7.0"
